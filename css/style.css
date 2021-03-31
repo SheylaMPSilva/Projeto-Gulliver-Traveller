@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body { 
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  background-color: #E4DBBF;
+  margin: 1em 5em 0 5.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+h1 {
+  margin: 1em 0 0 0;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  font-family: Roboto;
+  color: #383127;
+}
+
+p {
+  
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  font-family: Roboto;
+  color: #70AB8F;
+}
+
+legend {  
+  margin-block-end: 1em;
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center; 
+  color: #383127;
+}
+
+fieldset {
+  margin-top: 2em;
+}
+
+label {
+  display: inline-block;
+  font-size: .9em;
+  font-weight: 600;
+  margin-right: 0px;
+  text-transform: uppercase; 
+}
+
+input {
+  margin-bottom: 16px;
+  padding: 8px;
+  font-size: 0.8em;
+  color: #0B0728;
+  border-radius: 4px;
+  border: 0.2px solid #8C899C;
+  width: 60vw;
+  font-family: fantasy;
+}
+
+.flex li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+}
+
+.flex>li>label {
+  flex: 1 0 100px;
+  max-width: 150px; 
+}
+
+.flex>li>label+* {
+  flex: 1 0 200px;
+}
+
+select {
+  padding: 8px 4px;
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+
+#avatar {
+  margin: 1em 5em 4em 0.5em;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.container {
+  display:inline-flexbox;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 32px;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin: 0em 1.5em 1em 0em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #DC5B21;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container_1
+{ 
+  font-size: .9em;
+  font-weight: 600;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+button {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 4px;
+  background-color: #DC5B21;
+  border: 1px solid #383127;
+  color: #FAFAFA;
+  border-radius: 4px;
+  width: 25%;
+  cursor: pointer;
+  margin: 2em 5em 2em 35em;
+}

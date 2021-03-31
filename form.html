@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet">
+  <title>Gulliver Traveller</title>
+  <link rel="icon" type="image/png" href="./images/logo.jpg" />
+</head>
+
+<body>
+  <form>
+    <main>
+      <h1>COMPARTILHE SUAS EXPERIÊNCIAS</h1>
+      <p>Se algo despertou seu interesse e quer dividir com o mundo, indique coisas e lugares para comer, dormir,
+        saborear, dançar, descobrir e explorar.</p>
+    </main>
+    <section>
+
+      <fieldset>
+        <legend>QUERO INSPIRAR</legend>
+        <ul class="flex">
+          <li><label for="first-name">Seu nome</label>
+            <input type="text" id="first-name" placeholder="Digite seu nome aqui"></li>
+          <li><label for="email">Email</label><input type="email" id="email" placeholder="Digite seu email aqui"></li>
+
+          <li><label for="phone">Telefone</label><input type="tel" id="phone" placeholder="Agora seu telefone"></li>
+        </ul>
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>LIVE YOUR LIFE</legend>
+        <ul class="flex">
+          <li><label for="nome_evento">Nome Evento</label>
+            <input type="text" id="nome-evento"
+              placeholder="Nos informe o título do lugar/evento que deseja compartilhar">
+          </li>
+          <li><label for="descrição">Resenha</label><textarea rows="10" id="descrição-evento"
+              placeholder="Nos envie uma breve descrição do lugar.
+              Ex.: Desfrute de um tempo de qualidade com a família no hotel fazenda Aconchego da Serra. Crianças de todas as idades e famílias de todos os tamanhos vão se apaixonar por este lugar cheio de atrações premiadas, comida deliciosa e pessoas que fazem você se sentir em casa. Comece a planejar sua escapada para o Aconchego da Serra com essas idéias em mente."></textarea>
+    </section>
+
+    <fieldset>
+      <legend>TAKE IT EASY</legend>
+      <label class="container_1">Categoria </label>
+      <input list="categorias" placeholder="Digite ou escolha uma opção" />
+      <datalist id="categorias">
+        <option value="Comer & Beber">
+        <option value="Família">
+        <option value="Festival">
+        <option value="Música">
+        <option value="Histórico">
+        <option value="Vida noturna" </option> <option value="Artes performáticas" </option> <option value="Esportes"
+          </option> <option value="Outros" </option> </datalist> <label class="container">Entretenimento para crianças
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+          </label>
+          <label class="container"> Área ao ar livre
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Música ao vivo
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Happy hour
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Estacionamento
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Internet
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+    </fieldset>
+
+    <section>
+      <fieldset>
+        <legend>CONECTE-NOS</legend>
+        <ul class="flex">
+          <li><label for="homepage">Site</label><input type="url" id="homepage"
+              placeholder="Informe o site do lugar indicado.">
+          </li>
+          <li><label for="tripadvisor">Tripdvisor</label><input type="text" id="Tripadvisor"
+              placeholder="Tripadvisor do local indicado."></li>
+          <li><label for="facebook">Facebook</label><input type="text" id="facebook"
+              placeholder="Usuário Facebook do local indicado."></li>
+          <li><label for="instagram">Instagram</label><input type="text" id="instagram"
+              placeholder="Usuário Instagram do local indicado."></li>
+          <li><label for="twitter">Twitter</label><input type="text" id="twiter"
+              placeholder="Usuário Twitter do local indicado."></li>
+          <li><label for="youtube">youtube</label><input type="text" id="youtube"
+              placeholder="Nome canal Youtube do local indicado."></li>
+          <li><label for="youtube">youtube</label><input type="text" id="youtube"
+              placeholder="Nome canal Youtube do local indicado."></li>
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>Coordenadas</legend>
+        <label for="region">Onde</label>
+        <select name="region" id="region">
+          <option value="norte">Brasil</option>
+          <option value="nordeste">América do Sul</option>
+          <option value="centro-oeste">América do Norte</option>
+          <option value="sudeste">Asia</option>
+          <option value="sul">Europa</option>
+        </select>
+        <br><br>
+
+        <input type="zip" class="form-control" id="inputZip" placeholder="CEP">
+        <input type="street" class="form-control" id="autocomplete" placeholder="Rua | Número | Complemento">
+        <input type="city" class="form-control" id="inputCity" placeholder="Cidade">
+        <input type="state" class="form-control" id="inputState" placeholder="Estado">
+        <input type="county" class="form-control" id="inputCounty" placeholder="País">
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>PROVA FOTOGRÁFICA DE DIVERSÃO</legend>
+        <label for="images">Nos envie imagens especiais do local</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+      </fieldset>
+    </section>
+
+    <section>
+      <button type="submit">Enviar</button>
+    </section>
+
+  </form>
+</body>
+
+</html>
